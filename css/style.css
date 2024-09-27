@@ -1,22 +1,20 @@
-/*! HTML5 Boilerplate v9.0.1 | MIT License | https://html5boilerplate.com/ */
-/* main.css 3.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
-/* ==========================================================================
-   Base styles: opinionated defaults
-   ========================================================================== */
 html {
   font-family: "Roboto", sans-serif;
   color: #222;
-  font-size: 1.10em;
+  font-size: 1.1em;
   line-height: 1.5;
 }
+
 ::-moz-selection {
   background: #b3d4fc;
   text-shadow: none;
 }
+
 ::selection {
   background: #b3d4fc;
   text-shadow: none;
 }
+
 hr {
   display: block;
   height: 1px;
@@ -40,16 +38,17 @@ fieldset {
   margin: 0;
   padding: 0;
 }
+
 textarea {
   resize: vertical;
 }
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
+
+/* Helper classes */
 .hidden,
 [hidden] {
   display: none !important;
 }
+
 .visually-hidden {
   border: 0;
   clip: rect(0, 0, 0, 0);
@@ -61,8 +60,7 @@ textarea {
   white-space: nowrap;
   width: 1px;
 }
-.visually-hidden.focusable:active,
-.visually-hidden.focusable:focus {
+.visually-hidden.focusable:active, .visually-hidden.focusable:focus {
   clip: auto;
   height: auto;
   margin: 0;
@@ -71,33 +69,27 @@ textarea {
   white-space: inherit;
   width: auto;
 }
+
 .invisible {
   visibility: hidden;
 }
+
 .clearfix::before,
 .clearfix::after {
   content: "";
   display: table;
 }
+
 .clearfix::after {
   clear: both;
 }
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   ========================================================================== */
+
+/* Media Queries for Responsive Design */
 @media only screen and (min-width: 35em) {
   /* Style adjustments for viewports that meet the condition */
 }
-@media print,
-(-webkit-min-device-pixel-ratio: 1.25),
-(min-resolution: 1.25dppx),
-(min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
-}
-/* ==========================================================================
-   Print styles.
-   ========================================================================== */
-@media print {
+/* Print styles */
+@media print, (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 1.25dppx), (min-resolution: 120dpi) {
   *,
   *::before,
   *::after {
@@ -110,9 +102,12 @@ textarea {
   a:visited {
     text-decoration: underline;
   }
-  a[href]::after {
-    content: " (" attr(href) ")";
-  }
+  /* Comment this code out
+    a[href]::after {
+      content: " (" attr(href) ")";
+    }
+
+  */
   abbr[title]::after {
     content: " (" attr(title) ")";
   }
@@ -143,3 +138,21 @@ textarea {
     page-break-after: avoid;
   }
 }
+.github-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.github-link span {
+  font-size: 1em;
+  color: #222;
+}
+.github-link a {
+  display: flex;
+  align-items: center;
+}
+.github-link a img {
+  margin-left: 5px;
+}
+
+/*# sourceMappingURL=style.css.map */
