@@ -1,13 +1,13 @@
 {
-  "name": " ",
+  "name": "",
   "version": "0.0.1",
-  "description": "",
+  "description": "This is my portfolio website package",
   "private": true,
   "keywords": [
     ""
   ],
   "license": "",
-  "author": "",
+  "author": "Ally Magika",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack serve --open --config webpack.config.dev.js",

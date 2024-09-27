@@ -1,35 +1,29 @@
-/*! HTML6 Boilerplate v9.0.1 | MIT License | https://html5boilerplate.com/ */
-
+/*! HTML5 Boilerplate v9.0.1 | MIT License | https://html5boilerplate.com/ */
 /* main.css 3.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
-
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
-
 html {
-    font-family: "Roboto", sans-serif;
-    color: #222;
-    font-size: 1.10em;
-    line-height: 1.5;
+  font-family: "Roboto", sans-serif;
+  color: #222;
+  font-size: 1.10em;
+  line-height: 1.5;
 }
-
 ::-moz-selection {
-    background: #b3d4fc;
-    text-shadow: none;
+  background: #b3d4fc;
+  text-shadow: none;
 }
-
 ::selection {
-    background: #b3d4fc;
-    text-shadow: none;
+  background: #b3d4fc;
+  text-shadow: none;
 }
-
 hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
 }
 
 audio,
@@ -38,137 +32,114 @@ iframe,
 img,
 svg,
 video {
-    vertical-align: middle;
+  vertical-align: middle;
 }
 
 fieldset {
-    border: 0;
-    margin: 0;
-    padding: 0;
+  border: 0;
+  margin: 0;
+  padding: 0;
 }
-
 textarea {
-    resize: vertical;
+  resize: vertical;
 }
-
 /* ==========================================================================
    Helper classes
    ========================================================================== */
-
 .hidden,
 [hidden] {
-    display: none !important;
+  display: none !important;
 }
-
 .visually-hidden {
-    border: 0;
-    clip: rect(0, 0, 0, 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
 }
-
 .visually-hidden.focusable:active,
 .visually-hidden.focusable:focus {
-    clip: auto;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    position: static;
-    white-space: inherit;
-    width: auto;
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
 }
-
 .invisible {
-    visibility: hidden;
+  visibility: hidden;
 }
-
 .clearfix::before,
 .clearfix::after {
-    content: "";
-    display: table;
+  content: "";
+  display: table;
 }
-
 .clearfix::after {
-    clear: both;
+  clear: both;
 }
-
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
    ========================================================================== */
-
 @media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
+  /* Style adjustments for viewports that meet the condition */
 }
-
 @media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-    /* Style adjustments for high resolution devices */
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
 }
-
 /* ==========================================================================
    Print styles.
    ========================================================================== */
-
 @media print {
-    *,
-    *::before,
-    *::after {
-        background: #fff !important;
-        color: #000 !important;
-        /* Black prints faster */
-        box-shadow: none !important;
-        text-shadow: none !important;
-    }
-
-    a,
-    a:visited {
-        text-decoration: underline;
-    }
-
-    a[href]::after {
-        content: " (" attr(href) ")";
-    }
-
-    abbr[title]::after {
-        content: " (" attr(title) ")";
-    }
-
-    a[href^="#"]::after,
-    a[href^="javascript:"]::after {
-        content: "";
-    }
-
-    pre {
-        white-space: pre-wrap !important;
-    }
-
-    pre,
-    blockquote {
-        border: 1px solid #999;
-        page-break-inside: avoid;
-    }
-
-    tr,
-    img {
-        page-break-inside: avoid;
-    }
-
-    p,
-    h2,
-    h3 {
-        orphans: 3;
-        widows: 3;
-    }
-
-    h2,
-    h3 {
-        page-break-after: avoid;
-    }
+  *,
+  *::before,
+  *::after {
+    background: #fff !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+  a[href]::after {
+    content: " (" attr(href) ")";
+  }
+  abbr[title]::after {
+    content: " (" attr(title) ")";
+  }
+  a[href^="#"]::after,
+  a[href^="javascript:"]::after {
+    content: "";
+  }
+  pre {
+    white-space: pre-wrap !important;
+  }
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
 }
